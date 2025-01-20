@@ -30,7 +30,7 @@ TELEGRAM_BOT_API_TOKEN=123456:ABC-DEF1234ghIkl-zyx57W2v1u123ew11 ./tablecheck-pi
 
 1. Clone the repository:
    ```
-   git clone <repository-url>
+   git clone https://github.com/amanske/tablecheck-pinger-go
    cd tablecheck-pinger-go
    ```
 
