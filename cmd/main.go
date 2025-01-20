@@ -15,6 +15,7 @@ func main() {
 
 	url := os.Args[1]
 	channelID := os.Args[2]
+	debugMode := os.Getenv("DEBUG") == "true"
 
 	b := bot.Initialize()
 	channel, err := bot.Recipient(channelID)
@@ -24,8 +25,12 @@ func main() {
 
 	found := query.CheckAvailability(url)
 
-	if found {
-		_, err := b.Send(channel, fmt.Sprintf("Found an available slot for %s\n", url))
+	if found || debugMode {
+		debugString := ""
+		if debugMode {
+			debugString = "[DEBUG]"
+		}
+		_, err := b.Send(channel, fmt.Sprintf("%sFound an available slot for %s\n", debugString, url))
 		if err != nil {
 			log.Fatalf("Failed to send message: %v", err)
 		}
