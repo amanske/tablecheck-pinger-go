@@ -16,7 +16,8 @@ This project is a simple Go application that queries a specified tablecheck.com 
 ### Example
 
 ```
-TELEGRAM_BOT_API_TOKEN=123456:ABC-DEF1234ghIkl-zyx57W2v1u123ew11 ./tablecheck-pinger https://www.tablecheck.com/en/shops/my-restaurant/menu_items?num_people=2&date=2025-01-01 -1234567890
+TELEGRAM_BOT_API_TOKEN=123456:ABC-DEF1234ghIkl-zyx57W2v1u123ew11
+   ./tablecheck-pinger https://www.tablecheck.com/en/shops/my-restaurant/menu_items?num_people=2&date=2025-01-01 -1234567890
 ```
 
 ## Building from source
