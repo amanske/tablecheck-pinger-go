@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"log"
 	"os"
-	"tablecheck-pinger-go/internal/query"
+	"tablecheck-pinger-go/query"
 	bot "tablecheck-pinger-go/telebot"
 )
 
