@@ -10,7 +10,7 @@ This project is a simple Go application that queries a specified tablecheck.com 
 
 ### Running the binary
 
-- Download the binary: [`bin/linux`](./bin/linux/tablecheck-pinger) or [`darwin`](./bin/darwin/tablecheck-pinger)
+- Download the binary: [tablecheck-pinger-go/releases](https://github.com/amanske/tablecheck-pinger-go/releases)
 - Execute it: `TELEGRAM_BOT_API_TOKEN=<token> ./tablecheck-pinger <url> <channelID>`
 
 ### Example
@@ -51,11 +51,11 @@ make build
 
 To run the application, use:
 ```
-TELEGRAM_BOT_API_TOKEN=<your-telegram-bot-api-token> ./bin/tablecheck-pinger-go <url> <channel_username>
+TELEGRAM_BOT_API_TOKEN=<your-telegram-bot-api-token> ./bin/tablecheck-pinger-darwin <url> <channel_username>
 ```
 
 ### Example
 
 ```
-TELEGRAM_BOT_API_TOKEN=123456:ABC-DEF1234ghIkl-zyx57W2v1u123ew11 ./bin/tablecheck-pinger-go https://www.tablecheck.com/en/shops/my-restaurant/menu_items?num_people=2&date=2025-01-01 -1234567890
+TELEGRAM_BOT_API_TOKEN=123456:ABC-DEF1234ghIkl-zyx57W2v1u123ew11 ./bin/tablecheck-pinger-darwin https://www.tablecheck.com/en/shops/my-restaurant/menu_items?num_people=2&date=2025-01-01 -1234567890
 ```
